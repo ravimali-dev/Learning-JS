@@ -1,2 +1,3 @@
 # Learning-JS
 A code repo for javascript
+Learning javascript from scrach
