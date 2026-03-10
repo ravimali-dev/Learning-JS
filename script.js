@@ -14,11 +14,11 @@
 // // console.log(even);
 // // console.log(odd);
 
-// //Find average of array
+//Find average of array
 
 // let arr1 = [2,4,6,8];
 // let average;
-// let sum = 0;
+// let sum;
 
 // for(let i=0; i<arr1.length; i++){
 //      sum += arr1[i];
@@ -38,7 +38,7 @@
 // }
 // console.log(numAppear);
 
-//Reverse an array
+// Reverse an array
 
 // let arr = [1,2,3,4];
 // let reverseArr = [];
@@ -48,7 +48,7 @@
 // }
 // console.log(reverseArr);
 
-//Find second largest element
+// Find second largest element
 
 // let arr = [10,5,8,20,15];
 
@@ -74,16 +74,27 @@
 
 // console.log("Second Largest:", secondLargest);
 
-//Check array sorted hai ya nahi
+// Check array sorted hai ya nahi
 
-let arr = [2,5,3,4,1];
-let arrshortes;
-for(let i=0; i<arr.length-1; i++){
-       if(arr[i] > arr[i+1]){
-        arrshortes = false
-       }else{
-        arrshortes = true;
-       }
+// let arr = [2,5,3,4,1];
+// let arrshortes;
+// for(let i=0; i<arr.length-1; i++){
+//        if(arr[i] > arr[i+1]){
+//         arrshortes = false
+//        }else{
+//         arrshortes = true;
+//        }
     
+// }
+// console.log(arrshortes)
+
+
+ //remove duplicates
+let arr2 =  [1,2,2,3,4,4,5];
+let result = [];
+for(let i=0; i<arr2.length; i++){
+    if(arr2[i] !== arr2[i+1]){
+        result.push(arr2[i])
+    }
 }
-console.log(arrshortes)
+console.log(result)
