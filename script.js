@@ -50,29 +50,29 @@
 
 // Find second largest element
 
-let arr = [10,5,8,20,15];
+// let arr = [10,5,8,20,15];
 
-let largest = arr[0];
+// let largest = arr[0];
 
-// largest find
-for(let i=0; i<arr.length; i++){
-    if(largest < arr[i]){
-        largest = arr[i];
-    }
-}
+// // largest find
+// for(let i=0; i<arr.length; i++){
+//     if(largest < arr[i]){
+//         largest = arr[i];
+//     }
+// }
 
-console.log("Largest:", largest);
+// console.log("Largest:", largest);
 
-let secondLargest = arr[0];
+// let secondLargest = arr[0];
 
 // second largest find
-for(let i=0; i<arr.length; i++){
-    if(arr[i] < largest && arr[i] > secondLargest){
-        secondLargest = arr[i];
-    }
-}
+// for(let i=0; i<arr.length; i++){
+//     if(arr[i] < largest && arr[i] > secondLargest){
+//         secondLargest = arr[i];
+//     }
+// }
 
-console.log("Second Largest:", secondLargest);
+// console.log("Second Largest:", secondLargest);
 
 // Check array sorted hai ya nahi
 
@@ -98,3 +98,19 @@ console.log("Second Largest:", secondLargest);
 //     }
 // }
 // console.log(result);
+
+//Find maximum difference
+
+let arr = [2,7,3,10];
+//output = 8;
+let maxdiff = 0;
+
+for(let i=0; i<arr.length; i++){
+    for(let j=i+1; j<arr.length; j++){
+        let diff = arr[j] - arr[i];
+        if(diff > maxdiff){
+            maxdiff = diff;
+        }
+    }
+}
+console.log(maxdiff);
