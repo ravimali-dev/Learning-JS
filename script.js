@@ -50,33 +50,33 @@
 
 // Find second largest element
 
-// let arr = [10,5,8,20,15];
+let arr = [10,5,8,20,15];
 
-// let largest = arr[0];
+let largest = arr[0];
 
-// // largest find
-// for(let i=0; i<arr.length; i++){
-//     if(largest < arr[i]){
-//         largest = arr[i];
-//     }
-// }
+// largest find
+for(let i=0; i<arr.length; i++){
+    if(largest < arr[i]){
+        largest = arr[i];
+    }
+}
 
-// console.log("Largest:", largest);
+console.log("Largest:", largest);
 
-// let secondLargest = arr[0];
+let secondLargest = arr[0];
 
-// // second largest find
-// for(let i=0; i<arr.length; i++){
-//     if(arr[i] < largest && arr[i] > secondLargest){
-//         secondLargest = arr[i];
-//     }
-// }
+// second largest find
+for(let i=0; i<arr.length; i++){
+    if(arr[i] < largest && arr[i] > secondLargest){
+        secondLargest = arr[i];
+    }
+}
 
-// console.log("Second Largest:", secondLargest);
+console.log("Second Largest:", secondLargest);
 
 // Check array sorted hai ya nahi
 
-// let arr = [2,5,3,4,1];
+// let arr = [1,2,3,4,5,6];
 // let arrshortes;
 // for(let i=0; i<arr.length-1; i++){
 //        if(arr[i] > arr[i+1]){
@@ -90,11 +90,11 @@
 
 
  //remove duplicates
-let arr2 =  [1,2,2,3,4,4,5];
-let result = [];
-for(let i=0; i<arr2.length; i++){
-    if(arr2[i] !== arr2[i+1]){
-        result.push(arr2[i])
-    }
-}
-console.log(result)
+// let arr2 =  [1,2,2,3,4,4,5];
+// let result = [];
+// for(let i=0; i<arr2.length; i++){
+//     if(arr2[i] !== arr2[i+1]){
+//         result.push(arr2[i]);
+//     }
+// }
+// console.log(result);
