@@ -101,16 +101,29 @@
 
 //Find maximum difference
 
-let arr = [2,7,3,10];
-//output = 8;
-let maxdiff = 0;
+// let arr = [2,7,3,10];
+// //output = 8;
+// let maxdiff = 0;
+
+// for(let i=0; i<arr.length; i++){
+//     for(let j=i+1; j<arr.length; j++){
+//         let diff = arr[j] - arr[i];
+//         if(diff > maxdiff){
+//             maxdiff = diff;
+//         }
+//     }
+// }
+// console.log(maxdiff);
+
+//Find missing number
+
+let arr = [1,2,3,5];
 
 for(let i=0; i<arr.length; i++){
-    for(let j=i+1; j<arr.length; j++){
-        let diff = arr[j] - arr[i];
-        if(diff > maxdiff){
-            maxdiff = diff;
-        }
+
+    if(arr[i] !== i+1){
+        console.log("Missing number:", i+1);
+        break;
     }
+
 }
-console.log(maxdiff);
