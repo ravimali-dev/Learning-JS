@@ -16,15 +16,15 @@
 
 //Find average of array
 
-// let arr1 = [2,4,6,8];
-// let average;
-// let sum;
+let arr1 = [2,4,6,8];
+let average;
+let sum;
 
-// for(let i=0; i<arr1.length; i++){
-//      sum += arr1[i];
-//     average = sum/arr1.length;
-// }
-// console.log(average);
+for(let i=0; i<arr1.length; i++){
+     sum += arr1[i];
+    average = sum/arr1.length;
+}
+console.log(average);
 
 // //Count how many times a number appears
 
@@ -117,13 +117,62 @@
 
 //Find missing number
 
-let arr = [1,2,3,5];
+// 
+
+//Move all zeros to end
+
+// let arr = [1,0,2,0,3,4];
+
+// for(let i = 0; i < arr.length; i++){
+
+//     if(arr[i] === 0){
+
+//         for(let j = i + 1; j < arr.length; j++){
+
+//             if(arr[j] !== 0){
+
+//                 // swap
+//                 let temp = arr[i];
+//                 arr[i] = arr[j];
+//                 arr[j] = temp;
+
+//                 break;
+//             }
+
+//         }
+
+//     }
+
+// }
+
+// console.log(arr);
+
+let arr = [1,2,2,3,3,3];
+
+
+// for(let i=0; i<arr.length; i++){
+//     let count = 0;
+//     for(let j=0; j<arr.length; j++){
+//         if(arr[j] == arr[i]){
+//             count++;
+           
+//         }
+//     }
+//     console.log(arr[i],"count is ",count)
+// }
 
 for(let i=0; i<arr.length; i++){
 
-    if(arr[i] !== i+1){
-        console.log("Missing number:", i+1);
-        break;
+    let count = 0;   // reset
+
+    for(let j=0; j<arr.length; j++){
+
+        if(arr[i] == arr[j]){
+            count++;
+        }
+
     }
+
+    console.log(arr[i], "count is", count);
 
 }
