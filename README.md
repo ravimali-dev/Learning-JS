@@ -5,3 +5,4 @@ practice for while loop in js
 practice  javascript function
 practice javascript array 
 practice javascript loop
+practice javascript string 
